@@ -49,6 +49,9 @@ class App {
         );
         this.dragDropManager.init();
 
+        // Setup canvas drop handler for icons
+        this.setupCanvasDropHandler();
+
         // Bind events
         this.bindEvents();
 
@@ -57,6 +60,36 @@ class App {
 
         // Load icons lazily when icons section is expanded
         this.setupIconsLazyLoad();
+    }
+
+    setupCanvasDropHandler() {
+        const canvas = document.getElementById('badge-canvas');
+        if (!canvas) return;
+
+        canvas.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'copy';
+            canvas.classList.add('drag-over');
+        });
+
+        canvas.addEventListener('dragleave', (e) => {
+            canvas.classList.remove('drag-over');
+        });
+
+        canvas.addEventListener('drop', (e) => {
+            e.preventDefault();
+            canvas.classList.remove('drag-over');
+            
+            try {
+                const data = e.dataTransfer.getData('text/plain');
+                if (data) {
+                    const template = JSON.parse(data);
+                    this.addBadgeAndSelect(template);
+                }
+            } catch (err) {
+                console.error('Error processing drop:', err);
+            }
+        });
     }
 
     loadSettings() {
@@ -123,21 +156,52 @@ class App {
             iconsGrid.innerHTML = '';
         }
 
+        // Show message if no icons found
+        if (icons.length === 0 && page === 0) {
+            iconsGrid.innerHTML = '<div class="icons-loading"><span>No se encontraron iconos.</span></div>';
+            return;
+        }
+
         icons.forEach(icon => {
             const slug = icon.slug || this.iconManager.titleToSlug(icon.title);
-            const iconEl = document.createElement('button');
+            const iconEl = document.createElement('div');
             iconEl.className = 'icon-item';
             iconEl.title = icon.title;
+            iconEl.draggable = true;
             iconEl.dataset.slug = slug;
             iconEl.dataset.title = icon.title;
             iconEl.dataset.hex = icon.hex || '000000';
             
+            // Store template data for drag-and-drop
+            const template = {
+                label: '',
+                message: icon.title,
+                color: icon.hex || '000000',
+                style: this.state.defaultStyle,
+                logo: slug,
+                logoColor: 'white'
+            };
+            iconEl.dataset.template = JSON.stringify(template);
+            
             // Use CDN URL for icon thumbnail - escape title to prevent XSS
             const iconUrl = this.iconManager.getIconUrl(slug);
             const safeTitle = escapeHtml(icon.title || '');
-            iconEl.innerHTML = `<img src="${iconUrl}" alt="${safeTitle}" loading="lazy" onerror="this.style.display='none'">`;
+            iconEl.innerHTML = `<img src="${iconUrl}" alt="${safeTitle}" loading="lazy" onerror="this.parentElement.innerHTML='<span class=\\'icon-fallback\\'>${safeTitle.charAt(0)}</span>'">`;
             
+            // Click handler - creates badge and selects it
             iconEl.addEventListener('click', () => this.handleIconSelect(icon, slug));
+            
+            // Drag start handler
+            iconEl.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', JSON.stringify(template));
+                e.dataTransfer.effectAllowed = 'copy';
+                iconEl.classList.add('dragging');
+            });
+            
+            iconEl.addEventListener('dragend', () => {
+                iconEl.classList.remove('dragging');
+            });
+            
             iconsGrid.appendChild(iconEl);
         });
 
@@ -169,8 +233,21 @@ class App {
                 logo: slug,
                 logoColor: 'white'
             };
-            this.addBadge(badge);
+            this.addBadgeAndSelect(badge);
         }
+    }
+
+    addBadgeAndSelect(template) {
+        // Clone template to avoid reference issues
+        const newBadge = { ...template, id: Date.now() };
+        this.state.badges.push(newBadge);
+        this.updateState();
+        
+        // Auto-select the newly added badge
+        const newIndex = this.state.badges.length - 1;
+        this.handleBadgeSelect(newIndex);
+        
+        this.uiManager.showNotification('Badge añadido', 'success');
     }
 
     bindIconsSearch() {
