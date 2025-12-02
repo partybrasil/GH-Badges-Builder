@@ -5,7 +5,7 @@ import { UIManager } from './modules/UIManager.js';
 import { DragDropManager } from './modules/DragDropManager.js';
 import { ExportManager } from './modules/ExportManager.js';
 import { IconManager } from './modules/IconManager.js';
-import { copyToClipboard, debounce } from './utils/helpers.js';
+import { copyToClipboard, debounce, escapeHtml } from './utils/helpers.js';
 
 class App {
     constructor() {
@@ -132,9 +132,10 @@ class App {
             iconEl.dataset.title = icon.title;
             iconEl.dataset.hex = icon.hex || '000000';
             
-            // Use CDN URL for icon thumbnail
+            // Use CDN URL for icon thumbnail - escape title to prevent XSS
             const iconUrl = this.iconManager.getIconUrl(slug);
-            iconEl.innerHTML = `<img src="${iconUrl}" alt="${icon.title}" loading="lazy" onerror="this.style.display='none'">`;
+            const safeTitle = escapeHtml(icon.title || '');
+            iconEl.innerHTML = `<img src="${iconUrl}" alt="${safeTitle}" loading="lazy" onerror="this.style.display='none'">`;
             
             iconEl.addEventListener('click', () => this.handleIconSelect(icon, slug));
             iconsGrid.appendChild(iconEl);

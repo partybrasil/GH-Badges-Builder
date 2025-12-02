@@ -102,8 +102,13 @@ export class IconManager {
     /**
      * Select an icon
      * @param {object} icon - Icon object
+     * @returns {object|null} - The selected icon or null if invalid
      */
     selectIcon(icon) {
+        if (!icon || typeof icon !== 'object') {
+            console.warn('Invalid icon object provided to selectIcon');
+            return null;
+        }
         this.selectedIcon = icon;
         return icon;
     }
