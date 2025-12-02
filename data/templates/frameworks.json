@@ -1,0 +1,47 @@
+[
+    {
+        "name": "React",
+        "label": "React",
+        "message": "18",
+        "color": "61DAFB",
+        "logo": "react",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Vue.js",
+        "label": "Vue",
+        "message": "3",
+        "color": "4FC08D",
+        "logo": "vuedotjs",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Angular",
+        "label": "Angular",
+        "message": "16",
+        "color": "DD0031",
+        "logo": "angular",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Django",
+        "label": "Django",
+        "message": "4.2",
+        "color": "092E20",
+        "logo": "django",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Flask",
+        "label": "Flask",
+        "message": "2.3",
+        "color": "000000",
+        "logo": "flask",
+        "logoColor": "white",
+        "style": "flat"
+    }
+]

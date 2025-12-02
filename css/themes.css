@@ -1,0 +1,21 @@
+/* =========================================
+   THEMES
+   ========================================= */
+
+/* Light Theme Specifics */
+[data-theme="light"] .app-header {
+    background-color: #FFFFFF;
+}
+
+/* Dark Theme Specifics */
+[data-theme="dark"] .app-header {
+    background-color: #262828;
+}
+
+/* High Contrast Mode (Future) */
+[data-theme="high-contrast"] {
+    --color-primary: #000000;
+    --color-text-primary: #000000;
+    --color-background: #FFFFFF;
+    /* ... */
+}

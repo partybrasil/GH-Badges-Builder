@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Python",
+        "label": "Python",
+        "message": "3.10+",
+        "color": "3776AB",
+        "logo": "python",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "JavaScript",
+        "label": "JavaScript",
+        "message": "ES6+",
+        "color": "F7DF1E",
+        "logo": "javascript",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "TypeScript",
+        "label": "TypeScript",
+        "message": "5.0",
+        "color": "3178C6",
+        "logo": "typescript",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Rust",
+        "label": "Rust",
+        "message": "1.70",
+        "color": "000000",
+        "logo": "rust",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Go",
+        "label": "Go",
+        "message": "1.20",
+        "color": "00ADD8",
+        "logo": "go",
+        "logoColor": "white",
+        "style": "flat"
+    }
+]

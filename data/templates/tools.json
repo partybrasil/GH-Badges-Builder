@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Docker",
+        "label": "Docker",
+        "message": "v24",
+        "color": "2496ED",
+        "logo": "docker",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Git",
+        "label": "Git",
+        "message": "SCM",
+        "color": "F05032",
+        "logo": "git",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "VS Code",
+        "label": "Editor",
+        "message": "VS Code",
+        "color": "007ACC",
+        "logo": "visualstudiocode",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Postman",
+        "label": "Tools",
+        "message": "Postman",
+        "color": "FF6C37",
+        "logo": "postman",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Figma",
+        "label": "Design",
+        "message": "Figma",
+        "color": "F24E1E",
+        "logo": "figma",
+        "logoColor": "white",
+        "style": "flat"
+    }
+]

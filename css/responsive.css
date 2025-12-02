@@ -1,0 +1,61 @@
+/* =========================================
+   RESPONSIVE STYLES
+   ========================================= */
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+    :root {
+        --sidebar-width: 240px;
+        --panel-width: 280px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 0 var(--space-2);
+    }
+
+    .app-title {
+        display: none;
+    }
+
+    .header-center {
+        margin: 0 var(--space-2);
+    }
+
+    .app-main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .customization-panel {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+        border-left: none;
+        border-top: 1px solid var(--color-border);
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+    }
+
+    .customization-panel.active {
+        transform: translateY(0);
+    }
+
+    .canvas-toolbar {
+        overflow-x: auto;
+    }
+
+    .toolbar-center {
+        display: none;
+    }
+}

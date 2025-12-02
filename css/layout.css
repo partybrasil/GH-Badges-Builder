@@ -1,0 +1,198 @@
+/* =========================================
+   LAYOUT STYLES
+   ========================================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ----- HEADER ----- */
+.app-header {
+    height: var(--header-height);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--space-4);
+    z-index: var(--z-fixed);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    width: var(--sidebar-width);
+}
+
+.app-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.app-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+}
+
+.header-center {
+    flex: 1;
+    max-width: 600px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    width: var(--panel-width);
+    justify-content: flex-end;
+}
+
+/* ----- MAIN CONTAINER ----- */
+.app-main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ----- SIDEBAR ----- */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    z-index: var(--z-sticky);
+    transition: width var(--transition-base);
+}
+
+.sidebar-header {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-header h2 {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-3);
+}
+
+.sidebar-footer {
+    padding: var(--space-3);
+    border-top: 1px solid var(--color-border-light);
+}
+
+/* ----- CANVAS AREA ----- */
+.canvas-area {
+    flex: 1;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.canvas-toolbar {
+    height: var(--toolbar-height);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--space-4);
+}
+
+.toolbar-left,
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: var(--color-border);
+    margin: 0 var(--space-2);
+}
+
+.canvas-content {
+    flex: 1;
+    padding: var(--space-8);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center badges by default */
+    gap: var(--space-2);
+    min-height: 0;
+    /* Firefox fix */
+}
+
+/* Empty State */
+.canvas-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--color-text-tertiary);
+    text-align: center;
+}
+
+.empty-icon {
+    margin-bottom: var(--space-4);
+    opacity: 0.5;
+}
+
+/* ----- CUSTOMIZATION PANEL ----- */
+.customization-panel {
+    width: var(--panel-width);
+    background-color: var(--color-surface);
+    border-left: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    z-index: var(--z-sticky);
+    transition: width var(--transition-base);
+}
+
+.panel-header {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-header h2 {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.panel-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-4);
+}
+
+.panel-empty-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--color-text-tertiary);
+    font-style: italic;
+}
