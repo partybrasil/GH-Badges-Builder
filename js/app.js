@@ -179,17 +179,8 @@ class App {
             iconEl.dataset.title = icon.title;
             iconEl.dataset.hex = icon.hex || '000000';
             
-            // Make icon draggable - store template data for drag & drop
+            // Make icon draggable
             iconEl.draggable = true;
-            const badgeTemplate = {
-                label: '',
-                message: icon.title,
-                color: icon.hex || '000000',
-                style: this.state.defaultStyle,
-                logo: slug,
-                logoColor: 'white'
-            };
-            iconEl.dataset.template = JSON.stringify(badgeTemplate);
             
             // Use CDN URL for icon thumbnail - escape title to prevent XSS
             const iconUrl = this.iconManager.getIconUrl(slug);
@@ -198,8 +189,16 @@ class App {
             
             iconEl.addEventListener('click', () => this.handleIconSelect(icon, slug));
             
-            // Add drag start event for native HTML5 drag & drop
+            // Add drag start event - create template only when drag starts
             iconEl.addEventListener('dragstart', (e) => {
+                const badgeTemplate = {
+                    label: '',
+                    message: icon.title,
+                    color: icon.hex || '000000',
+                    style: this.state.defaultStyle,
+                    logo: slug,
+                    logoColor: 'white'
+                };
                 e.dataTransfer.setData('application/json', JSON.stringify(badgeTemplate));
                 e.dataTransfer.effectAllowed = 'copy';
                 iconEl.classList.add('dragging');

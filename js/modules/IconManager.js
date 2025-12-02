@@ -247,13 +247,14 @@ export class IconManager {
             
             // If no icons loaded from CDN, use fallback
             if (this.icons.length === 0) {
-                throw new Error('Empty icons data from CDN');
+                console.log('CDN returned empty icons data, using fallback');
+                this.icons = [...FALLBACK_ICONS];
+            } else {
+                console.log(`Loaded ${this.icons.length} icons from Simple Icons CDN`);
             }
             
             this.filteredIcons = [...this.icons];
             this.isLoaded = true;
-            
-            console.log(`Loaded ${this.icons.length} icons from Simple Icons CDN`);
             return this.icons;
         } catch (error) {
             console.error('Error loading icons from primary source:', error);

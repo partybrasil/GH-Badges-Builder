@@ -481,15 +481,25 @@
 
 .icon-item.icon-fallback {
     background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item.icon-fallback img {
+    display: none;
 }
 
 .icon-item.icon-fallback::after {
-    content: attr(data-slug);
-    font-size: 8px;
-    color: var(--color-text-tertiary);
+    content: attr(title);
+    font-size: 10px;
+    color: var(--color-text-secondary);
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
+    text-align: center;
+    line-height: 1.2;
+    word-break: break-word;
 }
 
 .icons-loading {
