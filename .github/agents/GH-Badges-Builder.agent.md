@@ -77,7 +77,7 @@ GH-Badges-Builder/
 ├── manifest.json                       # PWA manifest
 ├── sw.js                              # Service Worker (PWA)
 ├── README.md                          # Documentación de usuario
-├── GH-Badges-Builder.agente.md        # Este archivo
+├── GH-Badges-Builder.agent.md         # Este archivo
 ├── ROADMAP.md                         # Roadmap del proyecto
 ├── prompt.md                          # Instrucciones completas de desarrollo
 ├── LICENSE                            # MIT License
