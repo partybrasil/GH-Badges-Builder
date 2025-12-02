@@ -1,15 +1,10 @@
-# GH-Badges-Builder Agent
-
 ```yaml
 ---
 name: GH-Badges-Builder-AutoDEV
 description: Agente especializado en el desarrollo del generador de badges/shields para GitHub README con interfaz drag&drop - Aplicación web estática
-version: 2.0.0
-enabled: true
-architecture: static-web-app
-deployment: github-pages | local
 ---
 ```
+# GH-Badges-Builder Agent
 
 ## 🎯 Descripción del Proyecto
 
