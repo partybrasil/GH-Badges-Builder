@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Constructor interactivo de badges profesionales para GitHub README">
     <meta name="keywords" content="github, badges, shields, readme, markdown">
     <meta name="author" content="GH-Badges-Builder">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tu-usuario.github.io/GH-Badges-Builder/">
     <meta property="og:title" content="GH-Badges-Builder - Constructor de Badges">
     <meta property="og:description" content="Crea badges profesionales para tus proyectos GitHub">
     <meta property="og:image" content="assets/images/og-image.png">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://tu-usuario.github.io/GH-Badges-Builder/">
     <meta property="twitter:title" content="GH-Badges-Builder">
     <meta property="twitter:description" content="Constructor interactivo de badges">
     <meta property="twitter:image" content="assets/images/og-image.png">
-    
+
     <title>GH-Badges-Builder - Constructor de Badges para GitHub</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon-192.png">
     <link rel="apple-touch-icon" href="assets/images/icon-192.png">
-    
+
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
-    
+
     <!-- Theme Color -->
     <meta name="theme-color" content="#32B8C6">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
@@ -43,8 +44,9 @@
     <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body data-theme="auto">
-    
+
     <!-- ============================================ -->
     <!-- HEADER -->
     <!-- ============================================ -->
@@ -53,31 +55,27 @@
             <img src="assets/images/logo.svg" alt="Logo" class="app-logo">
             <h1 class="app-title">GH-Badges-Builder</h1>
         </div>
-        
+
         <div class="header-center">
-            <input 
-                type="search" 
-                id="global-search" 
-                class="search-input" 
-                placeholder="Buscar templates..."
-                aria-label="Buscar templates"
-            >
+            <input type="search" id="global-search" class="search-input" placeholder="Buscar templates..."
+                aria-label="Buscar templates">
         </div>
-        
+
         <div class="header-right">
             <button id="theme-toggle" class="icon-btn" title="Cambiar tema" aria-label="Cambiar tema">
-                <svg class="icon icon-theme" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <svg class="icon icon-theme" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </button>
-            
+
             <button id="settings-btn" class="icon-btn" title="Configuración" aria-label="Configuración">
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <circle cx="12" cy="12" r="3"></circle>
                     <path d="M12 1v6m0 6v6m-8-8h6m6 0h6"></path>
                 </svg>
             </button>
-            
+
             <button id="help-btn" class="icon-btn" title="Ayuda" aria-label="Ayuda">
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <circle cx="12" cy="12" r="10"></circle>
@@ -87,12 +85,12 @@
             </button>
         </div>
     </header>
-    
+
     <!-- ============================================ -->
     <!-- MAIN CONTENT -->
     <!-- ============================================ -->
     <main class="app-main">
-        
+
         <!-- SIDEBAR: Templates -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
@@ -103,7 +101,7 @@
                     </svg>
                 </button>
             </div>
-            
+
             <div class="sidebar-content">
                 <!-- Category: Languages -->
                 <div class="category-group" data-category="languages">
@@ -111,7 +109,8 @@
                         <span class="category-icon">🔤</span>
                         <span class="category-name">Lenguajes</span>
                         <span class="category-count">50+</span>
-                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
@@ -119,14 +118,15 @@
                         <!-- Templates loaded dynamically -->
                     </div>
                 </div>
-                
+
                 <!-- Category: Frameworks -->
                 <div class="category-group" data-category="frameworks">
                     <button class="category-header">
                         <span class="category-icon">🎯</span>
                         <span class="category-name">Frameworks</span>
                         <span class="category-count">80+</span>
-                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
@@ -141,7 +141,8 @@
                         <span class="category-icon">🛠️</span>
                         <span class="category-name">Herramientas</span>
                         <span class="category-count">100+</span>
-                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
@@ -149,14 +150,15 @@
                         <!-- Templates loaded dynamically -->
                     </div>
                 </div>
-                
+
                 <!-- Category: Favoritos -->
                 <div class="category-group" data-category="favorites">
                     <button class="category-header">
                         <span class="category-icon">⭐</span>
                         <span class="category-name">Favoritos</span>
                         <span class="category-count" id="favorites-count">0</span>
-                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
@@ -165,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="sidebar-footer">
                 <button id="create-custom-badge" class="btn btn-primary btn-block">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -176,7 +178,7 @@
                 </button>
             </div>
         </aside>
-        
+
         <!-- CANVAS: Badge Workspace -->
         <section class="canvas-area" id="canvas">
             <div class="canvas-toolbar">
@@ -189,24 +191,25 @@
                         </svg>
                         Seleccionar Todo
                     </button>
-                    
+
                     <button id="clear-canvas-btn" class="btn btn-sm" title="Limpiar canvas">
                         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <polyline points="3 6 5 6 21 6"></polyline>
-                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                            </path>
                         </svg>
                         Limpiar
                     </button>
-                    
+
                     <div class="divider"></div>
-                    
+
                     <button id="undo-btn" class="btn btn-sm" title="Deshacer" disabled>
                         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path d="M3 7v6h6"></path>
                             <path d="M21 17a9 9 0 00-9-9 9 9 0 00-6 2.3L3 13"></path>
                         </svg>
                     </button>
-                    
+
                     <button id="redo-btn" class="btn btn-sm" title="Rehacer" disabled>
                         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path d="M21 7v6h-6"></path>
@@ -214,11 +217,11 @@
                         </svg>
                     </button>
                 </div>
-                
+
                 <div class="toolbar-center">
                     <span class="badge-count">0 badges</span>
                 </div>
-                
+
                 <div class="toolbar-right">
                     <button id="layout-horizontal-btn" class="btn btn-sm" title="Alinear horizontal">
                         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -227,7 +230,7 @@
                             <line x1="3" y1="18" x2="21" y2="18"></line>
                         </svg>
                     </button>
-                    
+
                     <button id="layout-vertical-btn" class="btn btn-sm" title="Alinear vertical">
                         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <line x1="12" y1="3" x2="12" y2="21"></line>
@@ -235,7 +238,7 @@
                             <line x1="18" y1="3" x2="18" y2="21"></line>
                         </svg>
                     </button>
-                    
+
                     <button id="export-btn" class="btn btn-primary" title="Exportar badges">
                         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -246,21 +249,24 @@
                     </button>
                 </div>
             </div>
-            
+
             <div class="canvas-content" id="badge-canvas">
                 <div class="canvas-empty-state">
-                    <svg class="empty-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <svg class="empty-icon" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
                         <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                         <line x1="12" y1="22.08" x2="12" y2="12"></line>
                     </svg>
                     <p class="empty-text">Arrastra templates aquí o haz click en "Custom Badge"</p>
                 </div>
-                
+
                 <!-- Badges se añaden aquí dinámicamente -->
             </div>
         </section>
-        
+
         <!-- PANEL: Customization -->
         <aside class="customization-panel" id="customization-panel">
             <div class="panel-header">
@@ -271,22 +277,22 @@
                     </svg>
                 </button>
             </div>
-            
+
             <div class="panel-content" id="customization-content">
                 <div class="panel-empty-state">
                     <p>Selecciona un badge para personalizarlo</p>
                 </div>
-                
+
                 <!-- Contenido dinámico cuando se selecciona un badge -->
             </div>
         </aside>
-        
+
     </main>
-    
+
     <!-- ============================================ -->
     <!-- MODALS -->
     <!-- ============================================ -->
-    
+
     <!-- Export Modal -->
     <div id="export-modal" class="modal" role="dialog" aria-labelledby="export-modal-title" aria-hidden="true">
         <div class="modal-overlay" data-close-modal></div>
@@ -300,7 +306,7 @@
                     </svg>
                 </button>
             </div>
-            
+
             <div class="modal-body">
                 <div class="export-options">
                     <label class="form-label">Formato</label>
@@ -310,14 +316,14 @@
                         <button class="btn btn-sm" data-format="json">JSON</button>
                         <button class="btn btn-sm" data-format="urls">URLs</button>
                     </div>
-                    
+
                     <label class="form-label mt-3">Opciones Markdown</label>
                     <select id="markdown-format" class="form-select">
                         <option value="inline">Inline</option>
                         <option value="table">Table</option>
                         <option value="list">List</option>
                     </select>
-                    
+
                     <div class="mt-3">
                         <label class="checkbox-label">
                             <input type="checkbox" id="include-newlines" checked>
@@ -325,7 +331,7 @@
                         </label>
                     </div>
                 </div>
-                
+
                 <div class="export-preview mt-4">
                     <label class="form-label">Preview</label>
                     <div class="code-block">
@@ -333,7 +339,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="modal-footer">
                 <button class="btn btn-secondary" data-close-modal>Cancelar</button>
                 <button id="copy-export-btn" class="btn btn-primary">
@@ -354,7 +360,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Settings Modal -->
     <div id="settings-modal" class="modal" role="dialog" aria-labelledby="settings-modal-title" aria-hidden="true">
         <div class="modal-overlay" data-close-modal></div>
@@ -373,45 +379,88 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Custom Badge Modal -->
-    <div id="custom-badge-modal" class="modal" role="dialog" aria-labelledby="custom-badge-modal-title" aria-hidden="true">
+    <div id="custom-badge-modal" class="modal">
         <div class="modal-overlay" data-close-modal></div>
         <div class="modal-container">
             <div class="modal-header">
-                <h2 id="custom-badge-modal-title">Crear Badge Personalizado</h2>
-                <button class="modal-close" data-close-modal aria-label="Cerrar modal">
-                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                <h2>Crear Custom Badge</h2>
+                <button class="icon-btn" data-close-modal>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Formulario se inyectará dinámicamente -->
-                <p>Formulario de creación de badge.</p>
+                <div class="form-group mb-3">
+                    <label class="form-label">Tipo de Izquierda</label>
+                    <div style="display: flex; gap: 10px;">
+                        <label class="checkbox-label">
+                            <input type="radio" name="left-type" value="icon" checked> Icono
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="left-type" value="text"> Texto
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3" id="left-icon-group">
+                    <label class="form-label">Icono (Simple Icons)</label>
+                    <input type="text" class="form-control" id="custom-badge-logo"
+                        placeholder="ej. github, react, docker">
+                    <small style="color: var(--color-text-tertiary); font-size: 11px;">Busca en simpleicons.org</small>
+                </div>
+
+                <div class="form-group mb-3 hidden" id="left-text-group">
+                    <label class="form-label">Texto Izquierdo (Label)</label>
+                    <input type="text" class="form-control" id="custom-badge-label" placeholder="ej. Build">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Mensaje (Centro/Derecha)</label>
+                    <input type="text" class="form-control" id="custom-badge-message" placeholder="ej. v1.0.0, passing">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Color</label>
+                    <input type="color" class="form-control form-control-color" id="custom-badge-color" value="#32B8C6">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Estilo</label>
+                    <select class="form-select" id="custom-badge-style">
+                        <option value="flat">Flat</option>
+                        <option value="flat-square">Flat Square</option>
+                        <option value="for-the-badge">For the Badge</option>
+                        <option value="plastic">Plastic</option>
+                        <option value="social">Social</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-close-modal>Cancelar</button>
+                <button class="btn btn-primary" id="create-custom-badge">Crear Badge</button>
             </div>
         </div>
     </div>
-    
+
     <!-- ============================================ -->
     <!-- NOTIFICATIONS -->
     <!-- ============================================ -->
     <div id="notification-container" class="notification-container" aria-live="polite"></div>
-    
+
     <!-- ============================================ -->
     <!-- SCRIPTS -->
     <!-- ============================================ -->
-    
+
     <!-- SortableJS (CDN) - Optional -->
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js" 
-            integrity="sha384-..." 
-            crossorigin="anonymous"
-            onerror="console.warn('SortableJS failed to load from CDN, using fallback')"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js" integrity="sha384-..."
+        crossorigin="anonymous" onerror="console.warn('SortableJS failed to load from CDN, using fallback')"></script>
+
     <!-- App Scripts (ES6 Modules) -->
     <script type="module" src="js/app.js"></script>
-    
+
     <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
@@ -423,4 +472,5 @@
         }
     </script>
 </body>
+
 </html>

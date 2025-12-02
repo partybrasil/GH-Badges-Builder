@@ -8,6 +8,7 @@ export class UIManager {
             panel: document.getElementById('customization-panel'),
             notificationContainer: document.getElementById('notification-container')
         };
+        this.listeners = {};
     }
 
     renderBadges(badges) {
@@ -47,6 +48,7 @@ export class UIManager {
             const btn = document.createElement('button');
             btn.className = 'badge-item';
             btn.title = template.name;
+            btn.dataset.template = JSON.stringify(template);
             btn.innerHTML = BadgeGenerator.generateHtml(template);
             btn.onclick = () => onSelect(template);
             container.appendChild(btn);
@@ -65,15 +67,72 @@ export class UIManager {
         }, 3000);
     }
 
-    // Event bus simulation
-    listeners = {};
     on(event, callback) {
         if (!this.listeners[event]) this.listeners[event] = [];
         this.listeners[event].push(callback);
     }
+
     trigger(event, data) {
         if (this.listeners[event]) {
             this.listeners[event].forEach(cb => cb(data));
         }
+    }
+
+    renderCustomizationForm(badge) {
+        const panel = this.elements.panel;
+        const content = panel.querySelector('.panel-content');
+
+        if (!badge) {
+            content.innerHTML = `
+                <div class="panel-empty-state">
+                    Selecciona un badge para personalizarlo
+                </div>
+            `;
+            return;
+        }
+
+        content.innerHTML = `
+            <div class="form-group mb-3">
+                <label class="form-label">Label (Izquierda)</label>
+                <input type="text" class="form-control" id="badge-label" value="${badge.label || ''}">
+            </div>
+            
+            <div class="form-group mb-3">
+                <label class="form-label">Mensaje (Derecha)</label>
+                <input type="text" class="form-control" id="badge-message" value="${badge.message || ''}">
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="form-label">Color</label>
+                <input type="color" class="form-control form-control-color" id="badge-color" value="#${badge.color || '32B8C6'}" title="Choose your color">
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="form-label">Estilo</label>
+                <select class="form-select" id="badge-style">
+                    <option value="flat" ${badge.style === 'flat' ? 'selected' : ''}>Flat</option>
+                    <option value="flat-square" ${badge.style === 'flat-square' ? 'selected' : ''}>Flat Square</option>
+                    <option value="for-the-badge" ${badge.style === 'for-the-badge' ? 'selected' : ''}>For the Badge</option>
+                    <option value="plastic" ${badge.style === 'plastic' ? 'selected' : ''}>Plastic</option>
+                    <option value="social" ${badge.style === 'social' ? 'selected' : ''}>Social</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="form-label">Logo (Simple Icons)</label>
+                <input type="text" class="form-control" id="badge-logo" value="${badge.logo || ''}" placeholder="ej. github">
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="form-label">Color del Logo</label>
+                <input type="text" class="form-control" id="badge-logo-color" value="${badge.logoColor || ''}" placeholder="ej. white">
+            </div>
+            
+            <div class="mt-4">
+                <button id="delete-badge-btn" class="btn btn-sm btn-block" style="color: var(--color-error); border-color: var(--color-error);">
+                    Eliminar Badge
+                </button>
+            </div>
+        `;
     }
 }

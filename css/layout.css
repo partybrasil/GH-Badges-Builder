@@ -132,20 +132,6 @@ body {
 .canvas-content {
     flex: 1;
     padding: var(--space-8);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center badges by default */
-    gap: var(--space-2);
-    min-height: 0;
-    /* Firefox fix */
-}
-
-/* Empty State */
-.canvas-empty-state {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
