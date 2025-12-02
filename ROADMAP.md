@@ -1,7 +1,7 @@
 # 🗺️ Roadmap - GH-Badges-Builder
 
 **Proyecto**: GH-Badges-Builder  
-**Versión Actual**: 1.0.0  
+**Versión Actual**: 1.0.1  
 **Última Actualización**: Diciembre 2, 2025  
 **Arquitectura**: Static Web App (Client-Side)
 
@@ -10,7 +10,7 @@
 ## 📍 Estado Actual
 
 ```
-├── ✅ Versión 1.0 (MVP) - LANZADA
+├── ✅ Versión 1.0.1 (MVP + Fixes) - ACTUAL
 ├── 🚧 Versión 1.5 (Enhanced) - EN PROGRESO
 ├── 🔮 Versión 2.0 (Advanced) - PLANIFICADA
 └── 💡 Versión 3.0 (Next-Gen) - VISIÓN
@@ -18,12 +18,21 @@
 
 ---
 
-## ✅ Versión 1.0 - MVP (COMPLETADA)
+## ✅ Versión 1.0.1 - MVP + Bugfixes (ACTUAL)
 
 **Estado**: ✅ Lanzada - Diciembre 2025  
-**Objetivo**: Aplicación funcional básica con features core
+**Objetivo**: Aplicación funcional con fixes de iconos
 
-### Features Implementadas
+### Fixes Recientes (v1.0.1)
+- [x] **Sistema de Iconos Corregido**
+  - Lista de iconos ahora aparece correctamente
+  - Fallback con 200+ iconos populares cuando CDN no está disponible
+  - Búsqueda de iconos funcional con debounce
+  - Click en icono crea badge automáticamente
+  - Drag & drop de iconos al canvas implementado
+  - Panel de personalización se abre al crear badge desde icono
+
+### Features Implementadas (v1.0)
 
 #### Core Functionality
 - [x] **Arquitectura Static Web App**
@@ -36,7 +45,7 @@
   - URL builder para shields.io
   - 5 estilos: flat, flat-square, for-the-badge, plastic, social
   - Personalización de colores (hex, named)
-  - Integración Simple Icons (3000+ logos)
+  - Integración Simple Icons (200+ offline, 3000+ online)
   - Preview en tiempo real
 
 - [x] **Sistema de Templates**
@@ -105,7 +114,7 @@
 
 ### Métricas Alcanzadas
 - ✅ Templates: 500+
-- ✅ Iconos: 3000+ (Simple Icons)
+- ✅ Iconos: 200+ offline fallback, 3000+ via CDN
 - ✅ Estilos: 5
 - ✅ Formatos export: 4
 - ✅ Performance: <2s TTI

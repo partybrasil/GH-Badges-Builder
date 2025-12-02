@@ -26,11 +26,13 @@
 
 🎯 **Interfaz Drag & Drop** visual y fluida  
 📦 **500+ Templates** predefinidos listos para usar  
-🎨 **3000+ Iconos** de plataformas y frameworks  
-🌈 **Personalización Total** colores, estilos, gradientes  
+🎨 **200+ Iconos Integrados** con fallback offline (3000+ via CDN)  
+🔍 **Búsqueda de Iconos** encuentra iconos rápidamente por nombre  
+🖱️ **Click o Arrastrar** para añadir badges al canvas  
+🌈 **Personalización Total** colores, estilos, logos  
 ⚡ **Generación Instantánea** individual o en lote  
 📋 **Export Multiformato** Markdown, HTML, JSON, URLs  
-💾 **Funciona Offline** después de primera carga  
+💾 **Funciona Offline** después de primera carga (con iconos de respaldo)  
 🌐 **GitHub Pages** deploy con un click  
 📱 **Progressive Web App** instálala como app nativa  
 🎭 **Modo Claro/Oscuro** automático o manual
@@ -640,6 +642,19 @@ Ver [CHANGELOG.md](CHANGELOG.md) para historial de versiones.
 ## 🗺️ Roadmap
 
 Ver [ROADMAP.md](ROADMAP.md) para planes futuros.
+
+### 🔮 Próximas Funcionalidades
+
+- [ ] **PWA Completo** - Service Worker con cache offline
+- [ ] **Drag & Drop Avanzado** - Multi-selección y operaciones en lote
+- [ ] **Sistema de Gradientes** - Colores con degradado
+- [ ] **Paletas de Colores** - Material Design, Tailwind, colores de marca
+- [ ] **Internacionalización** - Soporte multi-idioma (EN, PT, FR, DE)
+- [ ] **GitHub API Integration** - Badges dinámicos con datos en tiempo real
+- [ ] **AI Badge Suggestions** - Recomendaciones inteligentes basadas en el proyecto
+- [ ] **Colecciones Compartibles** - Compartir sets de badges via URL
+- [ ] **Plugin System** - Extensibilidad con plugins personalizados
+- [ ] **Animaciones** - Badges animados con CSS/SVG
 
 ---
 

@@ -138,6 +138,13 @@ body {
     color: var(--color-text-tertiary);
     text-align: center;
     overflow-y: auto;
+    transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.canvas-content.drag-over {
+    background-color: rgba(50, 184, 198, 0.05);
+    outline: 2px dashed var(--color-primary);
+    outline-offset: -4px;
 }
 
 /* Layout Modes for Badges */

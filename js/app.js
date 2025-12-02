@@ -49,6 +49,9 @@ class App {
         );
         this.dragDropManager.init();
 
+        // Setup native HTML5 drag-and-drop for the canvas (for icons)
+        this.setupCanvasDropZone();
+
         // Bind events
         this.bindEvents();
 
@@ -57,6 +60,44 @@ class App {
 
         // Load icons lazily when icons section is expanded
         this.setupIconsLazyLoad();
+    }
+
+    setupCanvasDropZone() {
+        const canvas = document.getElementById('badge-canvas');
+        if (!canvas) return;
+
+        canvas.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'copy';
+            canvas.classList.add('drag-over');
+        });
+
+        canvas.addEventListener('dragleave', (e) => {
+            // Only remove class if leaving the canvas entirely
+            if (!canvas.contains(e.relatedTarget)) {
+                canvas.classList.remove('drag-over');
+            }
+        });
+
+        canvas.addEventListener('drop', (e) => {
+            e.preventDefault();
+            canvas.classList.remove('drag-over');
+            
+            // Try to get template data from the drop
+            const jsonData = e.dataTransfer.getData('application/json');
+            if (jsonData) {
+                try {
+                    const template = JSON.parse(jsonData);
+                    this.addBadge(template);
+                    
+                    // Select the newly added badge and show customization panel
+                    const newIndex = this.state.badges.length - 1;
+                    this.handleBadgeSelect(newIndex);
+                } catch (err) {
+                    console.error('Failed to parse dropped data:', err);
+                }
+            }
+        });
     }
 
     loadSettings() {
@@ -123,6 +164,12 @@ class App {
             iconsGrid.innerHTML = '';
         }
 
+        // Show message if no icons found
+        if (icons.length === 0 && page === 0) {
+            iconsGrid.innerHTML = '<div class="icons-loading"><span>No se encontraron iconos</span></div>';
+            return;
+        }
+
         icons.forEach(icon => {
             const slug = icon.slug || this.iconManager.titleToSlug(icon.title);
             const iconEl = document.createElement('button');
@@ -132,12 +179,35 @@ class App {
             iconEl.dataset.title = icon.title;
             iconEl.dataset.hex = icon.hex || '000000';
             
+            // Make icon draggable
+            iconEl.draggable = true;
+            
             // Use CDN URL for icon thumbnail - escape title to prevent XSS
             const iconUrl = this.iconManager.getIconUrl(slug);
             const safeTitle = escapeHtml(icon.title || '');
-            iconEl.innerHTML = `<img src="${iconUrl}" alt="${safeTitle}" loading="lazy" onerror="this.style.display='none'">`;
+            iconEl.innerHTML = `<img src="${iconUrl}" alt="${safeTitle}" loading="lazy" onerror="this.parentElement.classList.add('icon-fallback')">`;
             
             iconEl.addEventListener('click', () => this.handleIconSelect(icon, slug));
+            
+            // Add drag start event - create template only when drag starts
+            iconEl.addEventListener('dragstart', (e) => {
+                const badgeTemplate = {
+                    label: '',
+                    message: icon.title,
+                    color: icon.hex || '000000',
+                    style: this.state.defaultStyle,
+                    logo: slug,
+                    logoColor: 'white'
+                };
+                e.dataTransfer.setData('application/json', JSON.stringify(badgeTemplate));
+                e.dataTransfer.effectAllowed = 'copy';
+                iconEl.classList.add('dragging');
+            });
+            
+            iconEl.addEventListener('dragend', () => {
+                iconEl.classList.remove('dragging');
+            });
+            
             iconsGrid.appendChild(iconEl);
         });
 
