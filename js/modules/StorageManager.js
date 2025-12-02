@@ -39,7 +39,10 @@ export class StorageManager {
     }
 
     savePreferences(prefs) {
-        return this.save(CONFIG.STORAGE_KEYS.PREFERENCES, prefs);
+        // Merge with existing preferences
+        const existing = this.loadPreferences();
+        const merged = { ...existing, ...prefs };
+        return this.save(CONFIG.STORAGE_KEYS.PREFERENCES, merged);
     }
 
     loadPreferences() {
