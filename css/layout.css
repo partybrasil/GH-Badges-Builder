@@ -137,6 +137,34 @@ body {
     height: 100%;
     color: var(--color-text-tertiary);
     text-align: center;
+    overflow-y: auto;
+}
+
+/* Layout Modes for Badges */
+.canvas-content.layout-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-2);
+    align-content: flex-start;
+}
+
+.canvas-content.layout-horizontal .badge-item {
+    display: inline-flex;
+}
+
+.canvas-content.layout-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-2);
+}
+
+.canvas-content.layout-vertical .badge-item {
+    display: block;
+    width: fit-content;
 }
 
 .empty-icon {

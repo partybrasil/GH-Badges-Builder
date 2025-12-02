@@ -91,10 +91,10 @@
     <!-- ============================================ -->
     <main class="app-main">
 
-        <!-- SIDEBAR: Templates -->
+        <!-- SIDEBAR: Templates & Icons -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <h2>Templates</h2>
+                <h2>Recursos</h2>
                 <button id="sidebar-collapse" class="icon-btn" aria-label="Colapsar sidebar">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M15 18l-6-6 6-6"></path>
@@ -103,73 +103,172 @@
             </div>
 
             <div class="sidebar-content">
-                <!-- Category: Languages -->
-                <div class="category-group" data-category="languages">
-                    <button class="category-header">
-                        <span class="category-icon">🔤</span>
-                        <span class="category-name">Lenguajes</span>
-                        <span class="category-count">50+</span>
+                <!-- SECTION: Templates -->
+                <div class="sidebar-section" id="templates-section">
+                    <button class="section-header" data-section="templates">
+                        <span class="section-icon">📋</span>
+                        <span class="section-name">Templates</span>
                         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
-                    <div class="category-items" id="category-languages">
-                        <!-- Templates loaded dynamically -->
+                    <div class="section-content" id="templates-content">
+                        <!-- Category: Languages -->
+                        <div class="category-group collapsed" data-category="languages">
+                            <button class="category-header">
+                                <span class="category-icon">🔤</span>
+                                <span class="category-name">Lenguajes</span>
+                                <span class="category-count">50+</span>
+                                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="category-items scrollable" id="category-languages">
+                                <!-- Templates loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Category: Frameworks -->
+                        <div class="category-group collapsed" data-category="frameworks">
+                            <button class="category-header">
+                                <span class="category-icon">🎯</span>
+                                <span class="category-name">Frameworks</span>
+                                <span class="category-count">80+</span>
+                                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="category-items scrollable" id="category-frameworks">
+                                <!-- Templates loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Category: Tools -->
+                        <div class="category-group collapsed" data-category="tools">
+                            <button class="category-header">
+                                <span class="category-icon">🛠️</span>
+                                <span class="category-name">Herramientas</span>
+                                <span class="category-count">100+</span>
+                                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="category-items scrollable" id="category-tools">
+                                <!-- Templates loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Category: Favoritos -->
+                        <div class="category-group collapsed" data-category="favorites">
+                            <button class="category-header">
+                                <span class="category-icon">⭐</span>
+                                <span class="category-name">Favoritos</span>
+                                <span class="category-count" id="favorites-count">0</span>
+                                <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="category-items scrollable" id="category-favorites">
+                                <!-- Favorites loaded from LocalStorage -->
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Category: Frameworks -->
-                <div class="category-group" data-category="frameworks">
-                    <button class="category-header">
-                        <span class="category-icon">🎯</span>
-                        <span class="category-name">Frameworks</span>
-                        <span class="category-count">80+</span>
+                <!-- SECTION: Icons -->
+                <div class="sidebar-section collapsed" id="icons-section">
+                    <button class="section-header" data-section="icons">
+                        <span class="section-icon">🎨</span>
+                        <span class="section-name">Iconos</span>
+                        <span class="section-count">3000+</span>
                         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
-                    <div class="category-items" id="category-frameworks">
-                        <!-- Templates loaded dynamically -->
+                    <div class="section-content" id="icons-content">
+                        <div class="icons-search-container">
+                            <input type="search" id="icons-search" class="search-input" 
+                                placeholder="Buscar iconos..." aria-label="Buscar iconos">
+                        </div>
+                        <div class="icons-grid scrollable" id="icons-grid">
+                            <!-- Icons loaded from Simple Icons CDN -->
+                            <div class="icons-loading">
+                                <span>Cargando iconos...</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Category: Tools -->
-                <div class="category-group" data-category="tools">
-                    <button class="category-header">
-                        <span class="category-icon">🛠️</span>
-                        <span class="category-name">Herramientas</span>
-                        <span class="category-count">100+</span>
+                <!-- SECTION: Resources -->
+                <div class="sidebar-section collapsed" id="resources-section">
+                    <button class="section-header" data-section="resources">
+                        <span class="section-icon">🔗</span>
+                        <span class="section-name">Recursos Externos</span>
                         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
-                    <div class="category-items" id="category-tools">
-                        <!-- Templates loaded dynamically -->
-                    </div>
-                </div>
-
-                <!-- Category: Favoritos -->
-                <div class="category-group" data-category="favorites">
-                    <button class="category-header">
-                        <span class="category-icon">⭐</span>
-                        <span class="category-name">Favoritos</span>
-                        <span class="category-count" id="favorites-count">0</span>
-                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor">
-                            <path d="M6 9l6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div class="category-items" id="category-favorites">
-                        <!-- Favorites loaded from LocalStorage -->
+                    <div class="section-content" id="resources-content">
+                        <div class="resources-list">
+                            <div class="resource-category">
+                                <h4>📝 Markdown</h4>
+                                <a href="https://stackedit.io/" target="_blank" rel="noopener">StackEdit - Editor Markdown</a>
+                                <a href="https://dillinger.io/" target="_blank" rel="noopener">Dillinger - Editor Online</a>
+                                <a href="https://readme.so/" target="_blank" rel="noopener">readme.so - Generador README</a>
+                                <a href="https://markdownguide.org/" target="_blank" rel="noopener">Markdown Guide</a>
+                            </div>
+                            <div class="resource-category">
+                                <h4>🛡️ Badges & Shields</h4>
+                                <a href="https://shields.io/" target="_blank" rel="noopener">Shields.io - Generador</a>
+                                <a href="https://badgen.net/" target="_blank" rel="noopener">Badgen - Badges Rápidos</a>
+                                <a href="https://forthebadge.com/" target="_blank" rel="noopener">For The Badge</a>
+                                <a href="https://simpleicons.org/" target="_blank" rel="noopener">Simple Icons</a>
+                            </div>
+                            <div class="resource-category">
+                                <h4>🐙 GitHub</h4>
+                                <a href="https://gist.github.com/" target="_blank" rel="noopener">GitHub Gist</a>
+                                <a href="https://github.com/topics" target="_blank" rel="noopener">GitHub Topics</a>
+                                <a href="https://docs.github.com/es" target="_blank" rel="noopener">GitHub Docs</a>
+                                <a href="https://github.com/features/actions" target="_blank" rel="noopener">GitHub Actions</a>
+                                <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+                            </div>
+                            <div class="resource-category">
+                                <h4>🎨 Diseño & Media</h4>
+                                <a href="https://carbon.now.sh/" target="_blank" rel="noopener">Carbon - Código bonito</a>
+                                <a href="https://ray.so/" target="_blank" rel="noopener">Ray.so - Screenshots</a>
+                                <a href="https://excalidraw.com/" target="_blank" rel="noopener">Excalidraw - Diagramas</a>
+                                <a href="https://mermaid.live/" target="_blank" rel="noopener">Mermaid Live Editor</a>
+                                <a href="https://favicon.io/" target="_blank" rel="noopener">Favicon Generator</a>
+                            </div>
+                            <div class="resource-category">
+                                <h4>📊 Estadísticas</h4>
+                                <a href="https://github-readme-stats.vercel.app/" target="_blank" rel="noopener">GitHub Stats</a>
+                                <a href="https://git.io/" target="_blank" rel="noopener">Git.io - Acortador</a>
+                                <a href="https://wakatime.com/" target="_blank" rel="noopener">WakaTime</a>
+                                <a href="https://profile-summary-for-github.com/" target="_blank" rel="noopener">Profile Summary</a>
+                            </div>
+                            <div class="resource-category">
+                                <h4>🛠️ Herramientas Dev</h4>
+                                <a href="https://gitignore.io/" target="_blank" rel="noopener">gitignore.io</a>
+                                <a href="https://choosealicense.com/" target="_blank" rel="noopener">Choose a License</a>
+                                <a href="https://semver.org/lang/es/" target="_blank" rel="noopener">SemVer</a>
+                                <a href="https://conventionalcommits.org/" target="_blank" rel="noopener">Conventional Commits</a>
+                                <a href="https://gitmoji.dev/" target="_blank" rel="noopener">Gitmoji</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="sidebar-footer">
-                <button id="create-custom-badge" class="btn btn-primary btn-block">
+                <button id="create-custom-badge-btn" class="btn btn-primary btn-block">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <line x1="12" y1="5" x2="12" y2="19"></line>
                         <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -375,7 +474,144 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>Configuración no disponible en esta versión.</p>
+                <div class="form-group mb-3">
+                    <label class="form-label">Tema de la Aplicación</label>
+                    <select class="form-select" id="settings-theme">
+                        <option value="auto">Automático (Sistema)</option>
+                        <option value="light">Claro</option>
+                        <option value="dark">Oscuro</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Estilo de Badge por Defecto</label>
+                    <select class="form-select" id="settings-default-style">
+                        <option value="flat">Flat</option>
+                        <option value="flat-square">Flat Square</option>
+                        <option value="for-the-badge">For the Badge</option>
+                        <option value="plastic">Plastic</option>
+                        <option value="social">Social</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Formato de Exportación por Defecto</label>
+                    <select class="form-select" id="settings-default-format">
+                        <option value="markdown">Markdown</option>
+                        <option value="html">HTML</option>
+                        <option value="json">JSON</option>
+                        <option value="urls">URLs</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Disposición por Defecto</label>
+                    <select class="form-select" id="settings-default-layout">
+                        <option value="horizontal">Horizontal</option>
+                        <option value="vertical">Vertical</option>
+                    </select>
+                </div>
+
+                <div class="mt-4">
+                    <label class="form-label">Datos Almacenados</label>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <button class="btn btn-sm" id="clear-favorites-btn">Limpiar Favoritos</button>
+                        <button class="btn btn-sm" id="clear-history-btn">Limpiar Historial</button>
+                        <button class="btn btn-sm" id="reset-settings-btn" style="color: var(--color-error);">Restablecer Todo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-close-modal>Cancelar</button>
+                <button class="btn btn-primary" id="save-settings-btn">Guardar Configuración</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="help-modal" class="modal" role="dialog" aria-labelledby="help-modal-title" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-container" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2 id="help-modal-title">Ayuda</h2>
+                <button class="modal-close" data-close-modal aria-label="Cerrar modal">
+                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" style="max-height: 60vh; overflow-y: auto;">
+                <div class="help-section mb-4">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">🚀 Cómo Usar GH-Badges-Builder</h3>
+                    <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.6;">
+                        Esta herramienta te permite crear badges profesionales para tu README de GitHub de forma visual e intuitiva.
+                    </p>
+                </div>
+
+                <div class="help-section mb-4">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">📋 Añadir Badges</h3>
+                    <ul style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8; padding-left: 20px;">
+                        <li>Haz clic en cualquier template de la barra lateral para añadirlo al canvas</li>
+                        <li>Usa "Custom Badge" para crear badges personalizados</li>
+                        <li>Busca iconos en la sección "Iconos" para usarlos en tus badges</li>
+                    </ul>
+                </div>
+
+                <div class="help-section mb-4">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">✏️ Personalizar Badges</h3>
+                    <ul style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8; padding-left: 20px;">
+                        <li>Haz clic en un badge del canvas para seleccionarlo</li>
+                        <li>Usa el panel derecho para cambiar texto, colores, estilo y logo</li>
+                        <li>Los cambios se reflejan en tiempo real</li>
+                    </ul>
+                </div>
+
+                <div class="help-section mb-4">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">📐 Organizar Badges</h3>
+                    <ul style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8; padding-left: 20px;">
+                        <li>Arrastra y suelta para reordenar los badges</li>
+                        <li>Usa los botones de alineación (horizontal/vertical) para cambiar la disposición</li>
+                        <li>Horizontal: badges uno al lado del otro</li>
+                        <li>Vertical: badges uno debajo del otro</li>
+                    </ul>
+                </div>
+
+                <div class="help-section mb-4">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">📤 Exportar</h3>
+                    <ul style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8; padding-left: 20px;">
+                        <li>Haz clic en "Exportar" para ver las opciones</li>
+                        <li>Elige el formato: Markdown, HTML, JSON o URLs</li>
+                        <li>Copia o descarga el código generado</li>
+                        <li>Pega en tu README.md</li>
+                    </ul>
+                </div>
+
+                <div class="help-section mb-4">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">⌨️ Atajos de Teclado</h3>
+                    <div style="font-size: 13px; color: var(--color-text-secondary);">
+                        <div style="display: grid; grid-template-columns: 100px 1fr; gap: 8px;">
+                            <code style="background: var(--color-secondary); padding: 2px 6px; border-radius: 4px;">Ctrl + Z</code>
+                            <span>Deshacer</span>
+                            <code style="background: var(--color-secondary); padding: 2px 6px; border-radius: 4px;">Ctrl + Y</code>
+                            <span>Rehacer</span>
+                            <code style="background: var(--color-secondary); padding: 2px 6px; border-radius: 4px;">Delete</code>
+                            <span>Eliminar badge seleccionado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-section">
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">🔗 Recursos Útiles</h3>
+                    <ul style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8; padding-left: 20px;">
+                        <li><a href="https://shields.io/" target="_blank" rel="noopener" style="color: var(--color-primary);">Shields.io</a> - Más información sobre badges</li>
+                        <li><a href="https://simpleicons.org/" target="_blank" rel="noopener" style="color: var(--color-primary);">Simple Icons</a> - Catálogo de iconos</li>
+                        <li><a href="https://docs.github.com/es/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank" rel="noopener" style="color: var(--color-primary);">GitHub Docs</a> - Guía de READMEs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-close-modal>Entendido</button>
             </div>
         </div>
     </div>
