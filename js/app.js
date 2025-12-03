@@ -116,7 +116,7 @@ class App {
     }
 
     renderSidebar() {
-        const categories = ['languages', 'frameworks', 'databases', 'cloud', 'cicd', 'tools'];
+        const categories = ['languages', 'frameworks', 'databases', 'cloud', 'cicd', 'tools', 'animated'];
         categories.forEach(cat => {
             const templates = this.templateManager.getTemplatesByCategory(cat);
             this.uiManager.renderTemplates(cat, templates, (template) => this.addBadge(template));

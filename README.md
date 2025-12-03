@@ -6,7 +6,7 @@
 
 **Constructor Interactivo de Badges Profesionales para GitHub README**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit-32B8C6?style=for-the-badge)](https://tu-usuario.github.io/GH-Badges-Builder/)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit-32B8C6?style=for-the-badge)](https://partybrasil.github.io/GH-Badges-Builder/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Ready-success?style=for-the-badge&logo=github)](https://pages.github.com/)
 [![License MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![No Backend](https://img.shields.io/badge/Backend-None-blue?style=for-the-badge)](https://github.com)
@@ -35,7 +35,8 @@
 💾 **Funciona Offline** después de primera carga (con iconos de respaldo)  
 🌐 **GitHub Pages** deploy con un click  
 📱 **Progressive Web App** instálala como app nativa  
-🎭 **Modo Claro/Oscuro** automático o manual
+🎭 **Modo Claro/Oscuro** automático o manual  
+✨ **Badges Animados** con efectos CSS/SVG
 
 ---
 
@@ -45,7 +46,7 @@
 
 **Simplemente visita la app desplegada en GitHub Pages:**
 
-👉 **[https://tu-usuario.github.io/GH-Badges-Builder/](https://tu-usuario.github.io/GH-Badges-Builder/)**
+👉 **[https://partybrasil.github.io/GH-Badges-Builder/](https://partybrasil.github.io/GH-Badges-Builder/)**
 
 ¡No requiere instalación! Funciona directamente en tu navegador.
 
@@ -57,7 +58,7 @@
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/GH-Badges-Builder.git
+git clone https://github.com/partybrasil/GH-Badges-Builder.git
 cd GH-Badges-Builder
 
 # 2. Abrir index.html en tu navegador
@@ -69,7 +70,7 @@ cd GH-Badges-Builder
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/GH-Badges-Builder.git
+git clone https://github.com/partybrasil/GH-Badges-Builder.git
 cd GH-Badges-Builder
 
 # 2. Iniciar servidor HTTP simple
@@ -609,7 +610,7 @@ python -m http.server 8000
 
 ## 🐛 Reportar Bugs
 
-¿Encontraste un bug? [Abre un issue](https://github.com/tu-usuario/GH-Badges-Builder/issues/new?template=bug_report.md)
+¿Encontraste un bug? [Abre un issue](https://github.com/partybrasil/GH-Badges-Builder/issues/new?template=bug_report.md)
 
 **Incluye:**
 - Descripción del problema
@@ -623,7 +624,7 @@ python -m http.server 8000
 
 ## 💡 Solicitar Features
 
-¿Tienes una idea? [Abre un issue](https://github.com/tu-usuario/GH-Badges-Builder/issues/new?template=feature_request.md)
+¿Tienes una idea? [Abre un issue](https://github.com/partybrasil/GH-Badges-Builder/issues/new?template=feature_request.md)
 
 **Describe:**
 - Funcionalidad deseada
@@ -654,7 +655,7 @@ Ver [ROADMAP.md](ROADMAP.md) para planes futuros.
 - [ ] **AI Badge Suggestions** - Recomendaciones inteligentes basadas en el proyecto
 - [ ] **Colecciones Compartibles** - Compartir sets de badges via URL
 - [ ] **Plugin System** - Extensibilidad con plugins personalizados
-- [ ] **Animaciones** - Badges animados con CSS/SVG
+- [x] **Animaciones** - Badges animados con CSS/SVG ✅
 
 ---
 
@@ -699,19 +700,18 @@ furnished to do so, subject to the following conditions:
 
 ## 📊 Estadísticas del Proyecto
 
-![Repo Size](https://img.shields.io/github/repo-size/tu-usuario/GH-Badges-Builder?style=flat-square)
-![Code Size](https://img.shields.io/github/languages/code-size/tu-usuario/GH-Badges-Builder?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/tu-usuario/GH-Badges-Builder?style=flat-square)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/tu-usuario/GH-Badges-Builder?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/partybrasil/GH-Badges-Builder?style=flat-square)
+![Code Size](https://img.shields.io/github/languages/code-size/partybrasil/GH-Badges-Builder?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/partybrasil/GH-Badges-Builder?style=flat-square)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/partybrasil/GH-Badges-Builder?style=flat-square)
 
 ---
 
 ## 📞 Soporte y Contacto
 
-- 📧 **Email**: support@gh-badges-builder.dev
-- 💬 **Discord**: [Únete al servidor](https://discord.gg/tu-invite)
-- 🐦 **Twitter**: [@GHBadgesBuilder](https://twitter.com/GHBadgesBuilder)
-- 💼 **LinkedIn**: [GH Badges Builder](https://linkedin.com/company/gh-badges-builder)
+- 📧 **Email**: party_brasil@hotmail.com
+- 🐙 **GitHub**: [@partybrasil](https://github.com/partybrasil)
+- 🐛 **Issues**: [Reportar problema](https://github.com/partybrasil/GH-Badges-Builder/issues)
 
 ---
 
@@ -719,7 +719,7 @@ furnished to do so, subject to the following conditions:
 
 Si este proyecto te resulta útil, ¡considera darle una estrella! ⭐
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tu-usuario/GH-Badges-Builder&type=Date)](https://star-history.com/#tu-usuario/GH-Badges-Builder&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=partybrasil/GH-Badges-Builder&type=Date)](https://star-history.com/#partybrasil/GH-Badges-Builder&Date)
 
 ---
 
@@ -727,7 +727,7 @@ Si este proyecto te resulta útil, ¡considera darle una estrella! ⭐
 
 ### Proyectos Usando GH-Badges-Builder
 
-¿Usas esta herramienta? [Añade tu proyecto aquí](https://github.com/tu-usuario/GH-Badges-Builder/issues/new?template=showcase.md)
+¿Usas esta herramienta? [Añade tu proyecto aquí](https://github.com/partybrasil/GH-Badges-Builder/issues/new?template=showcase.md)
 
 ---
 
@@ -735,7 +735,7 @@ Si este proyecto te resulta útil, ¡considera darle una estrella! ⭐
 
 ### 🚀 Desplegado con GitHub Pages
 
-**[Ver Demo Online →](https://tu-usuario.github.io/GH-Badges-Builder/)**
+**[Ver Demo Online →](https://partybrasil.github.io/GH-Badges-Builder/)**
 
 ---
 
@@ -743,7 +743,7 @@ Si este proyecto te resulta útil, ¡considera darle una estrella! ⭐
 
 ---
 
-Hecho con ❤️ por la comunidad Open Source
+Hecho con ❤️ por [@partybrasil](https://github.com/partybrasil)
 
 ![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open%20Source-💚-green?style=for-the-badge)
