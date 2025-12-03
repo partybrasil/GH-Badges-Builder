@@ -33,6 +33,12 @@ export class UIManager {
             const el = document.createElement('div');
             el.className = 'badge-item';
             el.dataset.index = index;
+            
+            // Apply animation if present
+            if (badge.animation) {
+                el.dataset.animation = badge.animation;
+            }
+            
             el.innerHTML = BadgeGenerator.generateHtml(badge);
             el.onclick = () => this.trigger('badge-select', index);
             container.appendChild(el);
@@ -49,6 +55,12 @@ export class UIManager {
             btn.className = 'badge-item';
             btn.title = template.name;
             btn.dataset.template = JSON.stringify(template);
+            
+            // Apply animation if present (for animated category)
+            if (template.animation) {
+                btn.dataset.animation = template.animation;
+            }
+            
             btn.innerHTML = BadgeGenerator.generateHtml(template);
             btn.onclick = () => onSelect(template);
             container.appendChild(btn);
