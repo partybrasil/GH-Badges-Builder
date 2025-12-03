@@ -1,6 +1,6 @@
 export const CONFIG = {
     APP_NAME: 'GH-Badges-Builder',
-    VERSION: '1.0.1',
+    VERSION: '1.1.0',
 
     // Default Settings
     DEFAULT_THEME: 'auto',

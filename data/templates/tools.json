@@ -43,5 +43,275 @@
         "logo": "figma",
         "logoColor": "white",
         "style": "flat"
+    },
+    {
+        "name": "Kubernetes",
+        "label": "Kubernetes",
+        "message": "K8s",
+        "color": "326CE5",
+        "logo": "kubernetes",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Terraform",
+        "label": "Terraform",
+        "message": "IaC",
+        "color": "7B42BC",
+        "logo": "terraform",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Ansible",
+        "label": "Ansible",
+        "message": "Automation",
+        "color": "EE0000",
+        "logo": "ansible",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "npm",
+        "label": "npm",
+        "message": "Package",
+        "color": "CB3837",
+        "logo": "npm",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "pnpm",
+        "label": "pnpm",
+        "message": "Fast",
+        "color": "F69220",
+        "logo": "pnpm",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Yarn",
+        "label": "Yarn",
+        "message": "Package",
+        "color": "2C8EBB",
+        "logo": "yarn",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Bun",
+        "label": "Bun",
+        "message": "Runtime",
+        "color": "000000",
+        "logo": "bun",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Webpack",
+        "label": "Webpack",
+        "message": "5",
+        "color": "8DD6F9",
+        "logo": "webpack",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Vite",
+        "label": "Vite",
+        "message": "5",
+        "color": "646CFF",
+        "logo": "vite",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "ESLint",
+        "label": "ESLint",
+        "message": "Linter",
+        "color": "4B32C3",
+        "logo": "eslint",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Prettier",
+        "label": "Prettier",
+        "message": "Format",
+        "color": "F7B93E",
+        "logo": "prettier",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Jest",
+        "label": "Jest",
+        "message": "Testing",
+        "color": "C21325",
+        "logo": "jest",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Cypress",
+        "label": "Cypress",
+        "message": "E2E",
+        "color": "17202C",
+        "logo": "cypress",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Playwright",
+        "label": "Playwright",
+        "message": "E2E",
+        "color": "2EAD33",
+        "logo": "playwright",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Vitest",
+        "label": "Vitest",
+        "message": "Testing",
+        "color": "6E9F18",
+        "logo": "vitest",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Nginx",
+        "label": "Nginx",
+        "message": "Server",
+        "color": "009639",
+        "logo": "nginx",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Apache",
+        "label": "Apache",
+        "message": "Server",
+        "color": "D22128",
+        "logo": "apache",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Redis",
+        "label": "Redis",
+        "message": "Cache",
+        "color": "DC382D",
+        "logo": "redis",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "RabbitMQ",
+        "label": "RabbitMQ",
+        "message": "Queue",
+        "color": "FF6600",
+        "logo": "rabbitmq",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Kafka",
+        "label": "Kafka",
+        "message": "Streaming",
+        "color": "231F20",
+        "logo": "apachekafka",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Swagger",
+        "label": "Swagger",
+        "message": "API",
+        "color": "85EA2D",
+        "logo": "swagger",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Insomnia",
+        "label": "Insomnia",
+        "message": "API",
+        "color": "4000BF",
+        "logo": "insomnia",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Sentry",
+        "label": "Sentry",
+        "message": "Monitoring",
+        "color": "362D59",
+        "logo": "sentry",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Grafana",
+        "label": "Grafana",
+        "message": "Dashboard",
+        "color": "F46800",
+        "logo": "grafana",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Prometheus",
+        "label": "Prometheus",
+        "message": "Metrics",
+        "color": "E6522C",
+        "logo": "prometheus",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Datadog",
+        "label": "Datadog",
+        "message": "APM",
+        "color": "632CA6",
+        "logo": "datadog",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "New Relic",
+        "label": "New Relic",
+        "message": "APM",
+        "color": "008C99",
+        "logo": "newrelic",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Storybook",
+        "label": "Storybook",
+        "message": "UI",
+        "color": "FF4785",
+        "logo": "storybook",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Chromatic",
+        "label": "Chromatic",
+        "message": "Visual",
+        "color": "FC521F",
+        "logo": "chromatic",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Notion",
+        "label": "Notion",
+        "message": "Docs",
+        "color": "000000",
+        "logo": "notion",
+        "logoColor": "white",
+        "style": "flat"
     }
 ]

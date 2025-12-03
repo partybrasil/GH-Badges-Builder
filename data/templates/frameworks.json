@@ -43,5 +43,275 @@
         "logo": "flask",
         "logoColor": "white",
         "style": "flat"
+    },
+    {
+        "name": "Next.js",
+        "label": "Next.js",
+        "message": "14",
+        "color": "000000",
+        "logo": "nextdotjs",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Nuxt.js",
+        "label": "Nuxt.js",
+        "message": "3",
+        "color": "00DC82",
+        "logo": "nuxtdotjs",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Svelte",
+        "label": "Svelte",
+        "message": "4",
+        "color": "FF3E00",
+        "logo": "svelte",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "SvelteKit",
+        "label": "SvelteKit",
+        "message": "1.0",
+        "color": "FF3E00",
+        "logo": "svelte",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Express.js",
+        "label": "Express",
+        "message": "4.18",
+        "color": "000000",
+        "logo": "express",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "NestJS",
+        "label": "NestJS",
+        "message": "10",
+        "color": "E0234E",
+        "logo": "nestjs",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "FastAPI",
+        "label": "FastAPI",
+        "message": "0.100",
+        "color": "009688",
+        "logo": "fastapi",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Spring Boot",
+        "label": "Spring",
+        "message": "Boot",
+        "color": "6DB33F",
+        "logo": "springboot",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Laravel",
+        "label": "Laravel",
+        "message": "10",
+        "color": "FF2D20",
+        "logo": "laravel",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Rails",
+        "label": "Rails",
+        "message": "7.0",
+        "color": "CC0000",
+        "logo": "rubyonrails",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "ASP.NET",
+        "label": "ASP.NET",
+        "message": "Core",
+        "color": "512BD4",
+        "logo": "dotnet",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Flutter",
+        "label": "Flutter",
+        "message": "3.10",
+        "color": "02569B",
+        "logo": "flutter",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "React Native",
+        "label": "React",
+        "message": "Native",
+        "color": "61DAFB",
+        "logo": "react",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Electron",
+        "label": "Electron",
+        "message": "25",
+        "color": "47848F",
+        "logo": "electron",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Tauri",
+        "label": "Tauri",
+        "message": "1.4",
+        "color": "FFC131",
+        "logo": "tauri",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Remix",
+        "label": "Remix",
+        "message": "1.19",
+        "color": "000000",
+        "logo": "remix",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Gatsby",
+        "label": "Gatsby",
+        "message": "5",
+        "color": "663399",
+        "logo": "gatsby",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Astro",
+        "label": "Astro",
+        "message": "3.0",
+        "color": "FF5D01",
+        "logo": "astro",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Solid.js",
+        "label": "Solid",
+        "message": "1.7",
+        "color": "2C4F7C",
+        "logo": "solid",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Qwik",
+        "label": "Qwik",
+        "message": "1.2",
+        "color": "AC7EF4",
+        "logo": "qwik",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Ember.js",
+        "label": "Ember",
+        "message": "5",
+        "color": "E04E39",
+        "logo": "emberdotjs",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Backbone.js",
+        "label": "Backbone",
+        "message": "1.5",
+        "color": "0071B5",
+        "logo": "backbonedotjs",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Alpine.js",
+        "label": "Alpine",
+        "message": "3",
+        "color": "8BC0D0",
+        "logo": "alpinedotjs",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "htmx",
+        "label": "htmx",
+        "message": "1.9",
+        "color": "3366CC",
+        "logo": "htmx",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Phoenix",
+        "label": "Phoenix",
+        "message": "1.7",
+        "color": "FD4F00",
+        "logo": "phoenixframework",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Gin",
+        "label": "Gin",
+        "message": "1.9",
+        "color": "00ADD8",
+        "logo": "go",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Echo",
+        "label": "Echo",
+        "message": "4",
+        "color": "00ADD8",
+        "logo": "go",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Fiber",
+        "label": "Fiber",
+        "message": "2",
+        "color": "00ADD8",
+        "logo": "go",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Actix",
+        "label": "Actix",
+        "message": "Web",
+        "color": "000000",
+        "logo": "rust",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Rocket",
+        "label": "Rocket",
+        "message": "0.5",
+        "color": "D33847",
+        "logo": "rust",
+        "logoColor": "white",
+        "style": "flat"
     }
 ]
