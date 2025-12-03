@@ -757,10 +757,10 @@
 
 @keyframes badgeNeon {
     0% {
-        filter: drop-shadow(0 0 2px #06B6D4) drop-shadow(0 0 4px #06B6D4);
+        filter: drop-shadow(0 0 2px var(--color-primary, #06B6D4)) drop-shadow(0 0 4px var(--color-primary, #06B6D4));
     }
     100% {
-        filter: drop-shadow(0 0 8px #06B6D4) drop-shadow(0 0 16px #06B6D4) drop-shadow(0 0 24px #06B6D4);
+        filter: drop-shadow(0 0 8px var(--color-primary, #06B6D4)) drop-shadow(0 0 16px var(--color-primary, #06B6D4)) drop-shadow(0 0 24px var(--color-primary, #06B6D4));
     }
 }
 
@@ -802,11 +802,11 @@
 
 @keyframes badgeFire {
     0% {
-        filter: brightness(1) drop-shadow(0 0 3px #F97316);
+        filter: brightness(1) drop-shadow(0 0 3px var(--color-warning, #F97316));
         transform: translateY(0);
     }
     100% {
-        filter: brightness(1.2) drop-shadow(0 0 8px #EF4444);
+        filter: brightness(1.2) drop-shadow(0 0 8px var(--color-error, #EF4444));
         transform: translateY(-2px);
     }
 }
@@ -815,8 +815,22 @@
 .badge-item[data-animation="gradient-flow"],
 .badge-animated-gradient-flow {
     animation: badgeGradientFlow 3s ease infinite;
+    position: relative;
+}
+
+.badge-item[data-animation="gradient-flow"]::after,
+.badge-animated-gradient-flow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
     background-size: 200% 100%;
+    animation: badgeGradientFlow 3s ease infinite;
+    pointer-events: none;
+    border-radius: inherit;
 }
 
 @keyframes badgeGradientFlow {
