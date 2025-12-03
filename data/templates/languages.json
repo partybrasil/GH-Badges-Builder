@@ -43,5 +43,230 @@
         "logo": "go",
         "logoColor": "white",
         "style": "flat"
+    },
+    {
+        "name": "Java",
+        "label": "Java",
+        "message": "21",
+        "color": "ED8B00",
+        "logo": "openjdk",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "C#",
+        "label": "C%23",
+        "message": ".NET",
+        "color": "512BD4",
+        "logo": "csharp",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "C++",
+        "label": "C%2B%2B",
+        "message": "20",
+        "color": "00599C",
+        "logo": "cplusplus",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "C",
+        "label": "C",
+        "message": "Language",
+        "color": "A8B9CC",
+        "logo": "c",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "PHP",
+        "label": "PHP",
+        "message": "8.2",
+        "color": "777BB4",
+        "logo": "php",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Ruby",
+        "label": "Ruby",
+        "message": "3.2",
+        "color": "CC342D",
+        "logo": "ruby",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Swift",
+        "label": "Swift",
+        "message": "5.9",
+        "color": "F05138",
+        "logo": "swift",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Kotlin",
+        "label": "Kotlin",
+        "message": "1.9",
+        "color": "7F52FF",
+        "logo": "kotlin",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Dart",
+        "label": "Dart",
+        "message": "3.0",
+        "color": "0175C2",
+        "logo": "dart",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Scala",
+        "label": "Scala",
+        "message": "3.3",
+        "color": "DC322F",
+        "logo": "scala",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Elixir",
+        "label": "Elixir",
+        "message": "1.15",
+        "color": "4B275F",
+        "logo": "elixir",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Haskell",
+        "label": "Haskell",
+        "message": "GHC",
+        "color": "5D4F85",
+        "logo": "haskell",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Lua",
+        "label": "Lua",
+        "message": "5.4",
+        "color": "2C2D72",
+        "logo": "lua",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Perl",
+        "label": "Perl",
+        "message": "5.38",
+        "color": "39457E",
+        "logo": "perl",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "R",
+        "label": "R",
+        "message": "4.3",
+        "color": "276DC3",
+        "logo": "r",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Julia",
+        "label": "Julia",
+        "message": "1.9",
+        "color": "9558B2",
+        "logo": "julia",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Shell",
+        "label": "Shell",
+        "message": "Bash",
+        "color": "4EAA25",
+        "logo": "gnubash",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "PowerShell",
+        "label": "PowerShell",
+        "message": "7.0",
+        "color": "5391FE",
+        "logo": "powershell",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "HTML5",
+        "label": "HTML5",
+        "message": "Markup",
+        "color": "E34F26",
+        "logo": "html5",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "CSS3",
+        "label": "CSS3",
+        "message": "Styles",
+        "color": "1572B6",
+        "logo": "css3",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Sass",
+        "label": "Sass",
+        "message": "CSS",
+        "color": "CC6699",
+        "logo": "sass",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Markdown",
+        "label": "Markdown",
+        "message": "Docs",
+        "color": "000000",
+        "logo": "markdown",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "GraphQL",
+        "label": "GraphQL",
+        "message": "API",
+        "color": "E10098",
+        "logo": "graphql",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Clojure",
+        "label": "Clojure",
+        "message": "1.11",
+        "color": "5881D8",
+        "logo": "clojure",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "F#",
+        "label": "F%23",
+        "message": ".NET",
+        "color": "378BBA",
+        "logo": "fsharp",
+        "logoColor": "white",
+        "style": "flat"
     }
 ]

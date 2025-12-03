@@ -1,0 +1,182 @@
+[
+    {
+        "name": "PostgreSQL",
+        "label": "PostgreSQL",
+        "message": "16",
+        "color": "4169E1",
+        "logo": "postgresql",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "MySQL",
+        "label": "MySQL",
+        "message": "8.0",
+        "color": "4479A1",
+        "logo": "mysql",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "MariaDB",
+        "label": "MariaDB",
+        "message": "11",
+        "color": "003545",
+        "logo": "mariadb",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "MongoDB",
+        "label": "MongoDB",
+        "message": "7",
+        "color": "47A248",
+        "logo": "mongodb",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "SQLite",
+        "label": "SQLite",
+        "message": "3",
+        "color": "003B57",
+        "logo": "sqlite",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Oracle",
+        "label": "Oracle",
+        "message": "DB",
+        "color": "F80000",
+        "logo": "oracle",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "SQL Server",
+        "label": "SQL Server",
+        "message": "2022",
+        "color": "CC2927",
+        "logo": "microsoftsqlserver",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Cassandra",
+        "label": "Cassandra",
+        "message": "NoSQL",
+        "color": "1287B1",
+        "logo": "apachecassandra",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "CouchDB",
+        "label": "CouchDB",
+        "message": "3",
+        "color": "E42528",
+        "logo": "apachecouchdb",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "DynamoDB",
+        "label": "DynamoDB",
+        "message": "AWS",
+        "color": "4053D6",
+        "logo": "amazondynamodb",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Neo4j",
+        "label": "Neo4j",
+        "message": "Graph",
+        "color": "4581C3",
+        "logo": "neo4j",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Firebase",
+        "label": "Firebase",
+        "message": "DB",
+        "color": "FFCA28",
+        "logo": "firebase",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Supabase",
+        "label": "Supabase",
+        "message": "BaaS",
+        "color": "3ECF8E",
+        "logo": "supabase",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Prisma",
+        "label": "Prisma",
+        "message": "ORM",
+        "color": "2D3748",
+        "logo": "prisma",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Drizzle",
+        "label": "Drizzle",
+        "message": "ORM",
+        "color": "C5F74F",
+        "logo": "drizzle",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Elasticsearch",
+        "label": "Elasticsearch",
+        "message": "Search",
+        "color": "005571",
+        "logo": "elasticsearch",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "InfluxDB",
+        "label": "InfluxDB",
+        "message": "TimeSeries",
+        "color": "22ADF6",
+        "logo": "influxdb",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "PlanetScale",
+        "label": "PlanetScale",
+        "message": "DB",
+        "color": "000000",
+        "logo": "planetscale",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Turso",
+        "label": "Turso",
+        "message": "Edge DB",
+        "color": "4FF8D2",
+        "logo": "turso",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Neon",
+        "label": "Neon",
+        "message": "Serverless",
+        "color": "3ECF8E",
+        "logo": "neon",
+        "logoColor": "white",
+        "style": "flat"
+    }
+]

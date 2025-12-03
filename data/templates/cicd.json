@@ -1,0 +1,182 @@
+[
+    {
+        "name": "GitHub Actions",
+        "label": "GitHub",
+        "message": "Actions",
+        "color": "2088FF",
+        "logo": "githubactions",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "GitLab CI",
+        "label": "GitLab",
+        "message": "CI/CD",
+        "color": "FC6D26",
+        "logo": "gitlab",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Jenkins",
+        "label": "Jenkins",
+        "message": "CI",
+        "color": "D24939",
+        "logo": "jenkins",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "CircleCI",
+        "label": "CircleCI",
+        "message": "CI/CD",
+        "color": "343434",
+        "logo": "circleci",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Travis CI",
+        "label": "Travis CI",
+        "message": "CI",
+        "color": "3EAAAF",
+        "logo": "travisci",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Azure Pipelines",
+        "label": "Azure",
+        "message": "Pipelines",
+        "color": "2560E0",
+        "logo": "azurepipelines",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Bitbucket Pipelines",
+        "label": "Bitbucket",
+        "message": "Pipelines",
+        "color": "0052CC",
+        "logo": "bitbucket",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "TeamCity",
+        "label": "TeamCity",
+        "message": "CI",
+        "color": "000000",
+        "logo": "teamcity",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Drone CI",
+        "label": "Drone",
+        "message": "CI",
+        "color": "212121",
+        "logo": "drone",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "ArgoCD",
+        "label": "ArgoCD",
+        "message": "GitOps",
+        "color": "EF7B4D",
+        "logo": "argo",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Flux",
+        "label": "Flux",
+        "message": "GitOps",
+        "color": "5468FF",
+        "logo": "flux",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Helm",
+        "label": "Helm",
+        "message": "Charts",
+        "color": "0F1689",
+        "logo": "helm",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Dependabot",
+        "label": "Dependabot",
+        "message": "Deps",
+        "color": "025E8C",
+        "logo": "dependabot",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Renovate",
+        "label": "Renovate",
+        "message": "Deps",
+        "color": "1A1F6C",
+        "logo": "renovatebot",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "SonarCloud",
+        "label": "SonarCloud",
+        "message": "Quality",
+        "color": "F3702A",
+        "logo": "sonarcloud",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "SonarQube",
+        "label": "SonarQube",
+        "message": "Quality",
+        "color": "4E9BCD",
+        "logo": "sonarqube",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Codecov",
+        "label": "Codecov",
+        "message": "Coverage",
+        "color": "F01F7A",
+        "logo": "codecov",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Coveralls",
+        "label": "Coveralls",
+        "message": "Coverage",
+        "color": "3F5767",
+        "logo": "coveralls",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Snyk",
+        "label": "Snyk",
+        "message": "Security",
+        "color": "4C4A73",
+        "logo": "snyk",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Trivy",
+        "label": "Trivy",
+        "message": "Scanner",
+        "color": "1904DA",
+        "logo": "trivy",
+        "logoColor": "white",
+        "style": "flat"
+    }
+]

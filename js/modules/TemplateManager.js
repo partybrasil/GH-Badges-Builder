@@ -5,7 +5,7 @@ export class TemplateManager {
     }
 
     async loadTemplates() {
-        const categories = ['languages', 'frameworks', 'tools'];
+        const categories = ['languages', 'frameworks', 'databases', 'cloud', 'cicd', 'tools'];
 
         for (const category of categories) {
             try {

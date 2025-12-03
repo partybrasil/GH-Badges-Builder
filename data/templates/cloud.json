@@ -1,0 +1,182 @@
+[
+    {
+        "name": "AWS",
+        "label": "AWS",
+        "message": "Cloud",
+        "color": "232F3E",
+        "logo": "amazonaws",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Azure",
+        "label": "Azure",
+        "message": "Cloud",
+        "color": "0078D4",
+        "logo": "microsoftazure",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Google Cloud",
+        "label": "Google",
+        "message": "Cloud",
+        "color": "4285F4",
+        "logo": "googlecloud",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Vercel",
+        "label": "Vercel",
+        "message": "Deploy",
+        "color": "000000",
+        "logo": "vercel",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Netlify",
+        "label": "Netlify",
+        "message": "Deploy",
+        "color": "00C7B7",
+        "logo": "netlify",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Cloudflare",
+        "label": "Cloudflare",
+        "message": "CDN",
+        "color": "F38020",
+        "logo": "cloudflare",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Heroku",
+        "label": "Heroku",
+        "message": "PaaS",
+        "color": "430098",
+        "logo": "heroku",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "DigitalOcean",
+        "label": "DigitalOcean",
+        "message": "Cloud",
+        "color": "0080FF",
+        "logo": "digitalocean",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Linode",
+        "label": "Linode",
+        "message": "Cloud",
+        "color": "00A95C",
+        "logo": "linode",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Vultr",
+        "label": "Vultr",
+        "message": "Cloud",
+        "color": "007BFC",
+        "logo": "vultr",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Railway",
+        "label": "Railway",
+        "message": "Deploy",
+        "color": "0B0D0E",
+        "logo": "railway",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Render",
+        "label": "Render",
+        "message": "Deploy",
+        "color": "46E3B7",
+        "logo": "render",
+        "logoColor": "black",
+        "style": "flat"
+    },
+    {
+        "name": "Fly.io",
+        "label": "Fly.io",
+        "message": "Edge",
+        "color": "7B36ED",
+        "logo": "flydotio",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "AWS Lambda",
+        "label": "Lambda",
+        "message": "Serverless",
+        "color": "FF9900",
+        "logo": "awslambda",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "AWS S3",
+        "label": "S3",
+        "message": "Storage",
+        "color": "569A31",
+        "logo": "amazons3",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "AWS EC2",
+        "label": "EC2",
+        "message": "Compute",
+        "color": "FF9900",
+        "logo": "amazonec2",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Azure Functions",
+        "label": "Functions",
+        "message": "Serverless",
+        "color": "0062AD",
+        "logo": "azurefunctions",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Cloud Run",
+        "label": "Cloud Run",
+        "message": "GCP",
+        "color": "4285F4",
+        "logo": "googlecloud",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Deno Deploy",
+        "label": "Deno",
+        "message": "Deploy",
+        "color": "000000",
+        "logo": "deno",
+        "logoColor": "white",
+        "style": "flat"
+    },
+    {
+        "name": "Cloudflare Workers",
+        "label": "Workers",
+        "message": "Edge",
+        "color": "F38020",
+        "logo": "cloudflareworkers",
+        "logoColor": "white",
+        "style": "flat"
+    }
+]
