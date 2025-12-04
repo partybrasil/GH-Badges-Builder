@@ -1,5 +1,5 @@
 ---
-name: GH-Badges-Builder
+name: GH-Badges-Builder Agent
 description: Specialized agent for developing the GH-Badges-Builder web application - a static HTML/CSS/JavaScript badge generator for GitHub README files with drag&drop interface
 ---
 
